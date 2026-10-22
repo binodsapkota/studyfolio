@@ -1,0 +1,19 @@
+[theme]
+base = "dark"
+primaryColor = "#d9d9d9"
+backgroundColor = "#212121"
+secondaryBackgroundColor = "#303030"
+textColor = "#ececec"
+font = "'Segoe UI', 'Helvetica Neue', Arial, sans-serif"
+baseRadius = "0.75rem"
+borderColor = "#3a3a3a"
+
+[theme.sidebar]
+backgroundColor = "#171717"
+secondaryBackgroundColor = "#262626"
+
+[client]
+toolbarMode = "minimal"
+
+[browser]
+gatherUsageStats = false

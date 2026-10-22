@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+outputs/*
+!outputs/.gitkeep
+conversations/
+.pytest_cache/
+build/
+dist/
+release/

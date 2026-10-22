@@ -1,0 +1,82 @@
+STUDYFOLIO - LOCAL STUDY TUTOR
+==============================
+
+Studyfolio is a private AI study tutor that runs on your own computer.
+It answers questions, writes essays and letters, checks math and dosage,
+reads screenshots, and exports Word, PDF, and Excel files.
+Nothing is sent to the internet after the one-time downloads.
+
+
+WHAT YOU NEED
+-------------
+- Windows 10 or 11, 64-bit
+- 16 GB of RAM (8 GB works, but slowly)
+- About 12 GB of free disk space (the AI models are about 8 GB)
+- An internet connection for the first start only
+
+
+FIRST START
+-----------
+1. Unzip this folder somewhere you can write to, for example
+   Documents\Studyfolio. Do not run it from inside the zip file.
+
+2. Double-click Studyfolio.exe.
+
+   If Windows shows "Windows protected your PC", click "More info",
+   then "Run anyway". The app is not code-signed, so Windows warns
+   about it the first time.
+
+3. A black window opens and checks your setup:
+   - If Ollama (the program that runs the AI) is missing, it asks to
+     download and install it. Press Enter to say yes.
+   - It then asks to download the AI models: llama3.1:8b (4.9 GB, needed)
+     and qwen2.5vl:3b (3.2 GB, only needed for images). Press Enter to
+     say yes. This can take 10-40 minutes depending on your internet.
+
+4. When it says "Studyfolio is running", your browser opens the app.
+   If it does not, open the address shown in the window
+   (usually http://127.0.0.1:8501).
+
+Keep the black window open while you use Studyfolio. Close it to stop.
+
+
+EVERY START AFTER THAT
+----------------------
+Double-click Studyfolio.exe. It starts in a few seconds, with no downloads.
+
+
+WHERE YOUR FILES ARE
+--------------------
+- Exported Word, PDF, and Excel files: the "outputs" folder next to
+  Studyfolio.exe (you can also use the download button in the chat).
+- Saved chats: the "conversations" folder next to Studyfolio.exe.
+- Settings: the ".env" file next to Studyfolio.exe.
+
+If Studyfolio is in a folder it cannot write to, these go to
+%LOCALAPPDATA%\Studyfolio instead.
+
+
+TIPS
+----
+- Paste a screenshot with Ctrl+V and keep typing your question.
+- Files are only created when you ask: "export it as PDF", "save as Word",
+  or "export to Excel".
+- Faster on laptops with Intel Arc graphics: set the Windows user
+  environment variable OLLAMA_IGPU_ENABLE=1, then quit Ollama from the
+  system tray and start Studyfolio again.
+
+
+TROUBLESHOOTING
+---------------
+- "Ollama did not start": open Ollama from the Start menu, wait a few
+  seconds, then start Studyfolio again.
+- A model download failed: start Studyfolio again; it continues where
+  it stopped. If it keeps failing, update Ollama from
+  https://ollama.com/download.
+- Replies are slow: the first reply after starting loads the model and
+  takes longer. Close other heavy programs. A computer with an NVIDIA
+  graphics card is much faster.
+- The window closes right away: open a Command Prompt in this folder and
+  run Studyfolio.exe there to see the error message.
+
+Full guide and source code: https://github.com/binodsapkota/studyfolio
