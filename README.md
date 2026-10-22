@@ -178,3 +178,7 @@ docs/START-HERE.txt  Quick-start guide shipped inside the release zip
 studyfolio.spec      PyInstaller build definition
 tests/               Unit tests
 ```
+
+## License
+
+[MIT](LICENSE) (c) 2026 Binod Sapkota.
